@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CPoppins:700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- .............................................JOİN -->
+    <div class="join_background" onclick="join_background_close()">
+            <div class="product_details_close_con" style="position: fixed; top:30px; right: 30px;">
+                <svg class="product_details_close" style="width: 20px; height:20px; color:white" onclick="join_background_close()" xmlns="http://www.w3.org/2000/svg" width="10.003" height="10" viewBox="0 0 10.003 10"><path data-name="_ionicons_svg_ios-close (5)" d="M166.686,165.55l3.573-3.573a.837.837,0,0,0-1.184-1.184l-3.573,3.573-3.573-3.573a.837.837,0,1,0-1.184,1.184l3.573,3.573-3.573,3.573a.837.837,0,0,0,1.184,1.184l3.573-3.573,3.573,3.573a.837.837,0,0,0,1.184-1.184Z" transform="translate(-160.5 -160.55)" fill="currentColor"></path></svg>
+            </div>
+        <div class="join_card" onclick="join_card()">
+            <h1 style="color: rgb(0, 158, 127);
+            margin-bottom: 10px;
+            font-family: Poppins, sans-serif;
+            font-size: 21px;
+            font-weight: 700;">Welcome Back</h1>
+            <p style="margin-bottom: 30px;
+            font-family: Lato, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: rgb(119, 121, 140);
+            display: block;">Login with your email & password</p>
+            <form id="join_form_login" class="join_form" style="width: 500px;">
+                <input class="join_username" type="text" name="" id="" placeholder="Username" required="true">
+                <input class="join_password" type="password" name="" id="" placeholder="Password" required="true">
+                <button class="join_continue_button">Continue</button>
+            </form>
+            <span style="padding: 20px 0px;">Don't have any account? <span class="join_signup" onclick="join_signup()" style="background-color: transparent; color: rgb(0, 158, 127); cursor: pointer; text-decoration: underline;">Sign Up</span></span>
+        </div>
+        <div class="join_card join_card_signup" onclick="join_card()">
+            <h1 style="color: rgb(0, 158, 127);
+            margin-bottom: 10px;
+            font-family: Poppins, sans-serif;
+            font-size: 21px;
+            font-weight: 700;">Sign Up</h1>
+            <p style="margin-bottom: 30px;
+            font-family: Lato, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: rgb(119, 121, 140);
+            display: block;">By signing up, you agree to Pickbazar's</p>
+            <form id="join_form_signup" class="join_form" style="width: 500px;">
+                <input class="join_firstname2" type="text" name="" id="" placeholder="Firstname" required="true">
+                <input class="join_surname2" type="text" name="" id="" placeholder="Surname" required="true">
+                <input class="join_email2" type="email" name="" id="" placeholder="Email" required="true">
+                <input class="join_username2" type="text" name="" id="" placeholder="Username" required="true">
+                <input class="join_password2" type="password" name="" id="" placeholder="Password" required="true">
+                <button class="join_continue_button">Continue</button>
+            </form>
+            <span style="padding: 20px 0px;">Already have an account?<span class="join_signup" onclick="join_login()" style="background-color: transparent; color: rgb(0, 158, 127); cursor: pointer; text-decoration: underline;"> Login</span></span>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- .............................................JOİN -->
+
+    <div class="items_bar">
+        <div class="items_bar_top">
+            <div class="items_bar_top_top">
+                <div class="items_bar_top_left">
+                    <svg class="items_bar_logo" xmlns="http://www.w3.org/2000/svg" width="12.686" height="16" viewBox="0 0 12.686 16"><g data-name="Group 2704" transform="translate(-27.023 -2)"><g data-name="Group 17" transform="translate(27.023 5.156)"><g data-name="Group 16"><path data-name="Path 3" d="M65.7,111.043l-.714-9A1.125,1.125,0,0,0,63.871,101H62.459V103.1a.469.469,0,1,1-.937,0V101H57.211V103.1a.469.469,0,1,1-.937,0V101H54.862a1.125,1.125,0,0,0-1.117,1.033l-.715,9.006a2.605,2.605,0,0,0,2.6,2.8H63.1a2.605,2.605,0,0,0,2.6-2.806Zm-4.224-4.585-2.424,2.424a.468.468,0,0,1-.663,0l-1.136-1.136a.469.469,0,0,1,.663-.663l.8.8,2.092-2.092a.469.469,0,1,1,.663.663Z" transform="translate(-53.023 -101.005)" fill="currentColor"></path></g></g><g data-name="Group 19" transform="translate(30.274 2)"><g data-name="Group 18"><path data-name="Path 4" d="M160.132,0a3.1,3.1,0,0,0-3.093,3.093v.063h.937V3.093a2.155,2.155,0,1,1,4.311,0v.063h.937V3.093A3.1,3.1,0,0,0,160.132,0Z" transform="translate(-157.039)" fill="currentColor"></path></g></g></g></svg>
+                    <div class="selected_items_number_items">
+                        <p class="items_bar_number" id="selected_items_number2">0</p>
+                        <p class="items_bar_number">&nbsp;items</p>
+                    </div>
+                </div>
+                <div class="items_bar_top_right">
+                    <svg class="items_bar_close" onclick="selected_items_bar()" xmlns="http://www.w3.org/2000/svg" width="10.003" height="10" viewBox="0 0 10.003 10"><path data-name="_ionicons_svg_ios-close (5)" d="M166.686,165.55l3.573-3.573a.837.837,0,0,0-1.184-1.184l-3.573,3.573-3.573-3.573a.837.837,0,1,0-1.184,1.184l3.573,3.573-3.573,3.573a.837.837,0,0,0,1.184,1.184l3.573-3.573,3.573,3.573a.837.837,0,0,0,1.184-1.184Z" transform="translate(-160.5 -160.55)" fill="currentColor"></path></svg>
+                </div>
+            </div>
+            <div class="items_bar_all_cards">
+
+                <div class="items_bar_noitem" style="display: flex; height: 60px;border-bottom: 1px solid rgb(226, 226, 226); padding: 20px 30px; justify-content: center; align-items: center;">
+                    <h1 style="color: rgb(119, 121, 140); font-size: 17px;">No products found</h1>
+                </div>
+
+                <!-- <div class="items_bar_card" style="display: flex; border-bottom: 1px solid rgb(226, 226, 226); padding: 20px 30px; justify-content: space-between;" id="items_bar_card_0">
+                    <div style="display: flex;">
+                        <div class="items_bar_card_all">
+                            <svg style="color: rgb(119, 121, 140);  margin-bottom: 15px" onclick="items_bar_plus(0)" xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 12 12"><g id="Group_3351" data-name="Group 3351" transform="translate(-1367 -190)"><rect data-name="Rectangle 520" width="12" height="2" rx="1" transform="translate(1367 195)" fill="currentColor"></rect><rect data-name="Rectangle 521" width="12" height="2" rx="1" transform="translate(1374 190) rotate(90)" fill="currentColor"></rect></g></svg>
+    
+                            <span style="color: rgb(13, 17, 54);margin-top: -1px;" id="items_bar_number_0">0</span>
+                            
+                            <div style="margin-top: 10px;height: 14px;;display: flex;align-items: center; justify-content: center;" onclick="items_bar_minus(0)">
+                                <svg style="color: rgb(119, 121, 140); " xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg>
+                            </div>
+    
+                        </div>
+                        <img style="width: 85px; height: 85px; margin-left: 10px;" id="items_bar_card_image_0" src="http://s3.amazonaws.com/redqteam.com/pickbazar/banana_thumb.png" alt="">
+                        <div style="margin-left: 10px; display: flex; flex-direction: column; justify-content: center ;">
+                            <h1 style="font-size: 14px; font-weight: 400; color: rgb(13, 17, 54); margin-bottom: 10px;">Banana</h1>
+                            <div style="display: flex; font-size: 7px;font-weight: 700; color: rgb(0, 158, 127); margin-bottom: 10px;">
+                                <h1>$</h1>
+                                <h1  id="items_bar_prize">0</h1>
+                            </div>
+                            <div style="display: flex; font-size: 13px; font-weight: 400;color: rgb(119, 121, 140);">
+                                <p id="items_bar_number">1</p>
+                                <p>&nbsp;x&nbsp;</p>
+                                <p id="items_bar_ccal">8pc(s)</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div style="display: flex; align-items: center; ">
+                        <h1 style=" font-size: 15px; font-weight: 700; color: rgb(13, 17, 54);">$</h1>
+                        <h1 style="font-size: 15px; font-weight: 700; color: rgb(13, 17, 54);" id="items_bar_total_prize_0">0</h1>
+                        <svg style="margin-left: 20px;width: 12px; height: 12px; color:  rgba(0, 0, 0, 0.25);" onclick="items_bar_remove()" xmlns="http://www.w3.org/2000/svg" width="10.003" height="10" viewBox="0 0 10.003 10"><path data-name="_ionicons_svg_ios-close (5)" d="M166.686,165.55l3.573-3.573a.837.837,0,0,0-1.184-1.184l-3.573,3.573-3.573-3.573a.837.837,0,1,0-1.184,1.184l3.573,3.573-3.573,3.573a.837.837,0,0,0,1.184,1.184l3.573-3.573,3.573,3.573a.837.837,0,0,0,1.184-1.184Z" transform="translate(-160.5 -160.55)" fill="currentColor"></path></svg>
+                    </div>
+                </div> -->
+            </div>
+            
+        </div>
+        <div class="items_bar_bottom">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="selected_items_bar" onclick="selected_items_bar()">
+        <div class="selected_items_row">
+            <svg class="selected_items_logo" xmlns="http://www.w3.org/2000/svg" width="12.686" height="16" viewBox="0 0 12.686 16"><g data-name="Group 2704" transform="translate(-27.023 -2)"><g data-name="Group 17" transform="translate(27.023 5.156)"><g data-name="Group 16"><path data-name="Path 3" d="M65.7,111.043l-.714-9A1.125,1.125,0,0,0,63.871,101H62.459V103.1a.469.469,0,1,1-.937,0V101H57.211V103.1a.469.469,0,1,1-.937,0V101H54.862a1.125,1.125,0,0,0-1.117,1.033l-.715,9.006a2.605,2.605,0,0,0,2.6,2.8H63.1a2.605,2.605,0,0,0,2.6-2.806Zm-4.224-4.585-2.424,2.424a.468.468,0,0,1-.663,0l-1.136-1.136a.469.469,0,0,1,.663-.663l.8.8,2.092-2.092a.469.469,0,1,1,.663.663Z" transform="translate(-53.023 -101.005)" fill="currentColor"></path></g></g><g data-name="Group 19" transform="translate(30.274 2)"><g data-name="Group 18"><path data-name="Path 4" d="M160.132,0a3.1,3.1,0,0,0-3.093,3.093v.063h.937V3.093a2.155,2.155,0,1,1,4.311,0v.063h.937V3.093A3.1,3.1,0,0,0,160.132,0Z" transform="translate(-157.039)" fill="currentColor"></path></g></g></g></svg>
+            <div class="selected_items_number_items">
+                <p class="selected_items_number" id="selected_items_number">0</p>
+                <p class="selected_items_number">&nbsp;items</p>
+            </div>
+        </div>
+        
+        <div class="selected_items_prize">
+            <h1 class="selected_items_prize_do">$</h1>
+            <h1  id="selected_items_prize">0</h1>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="navbar">
+        <div id="navbar_left">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDkuMTI0IiBoZWlnaHQ9IjE4Ij48ZyBkYXRhLW5hbWU9Ikdyb3VwIDI4MjkiPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCAyNjkwIiBkPSJNMCAuNjUybDIuMDcyLjAyNkMzLjgxNC42OTkgNS41NjMuNjI3IDcuMjk2Ljc2M2E1LjIgNS4yIDAgMDE0LjggNC4xNjEgNS4yMjIgNS4yMjIgMCAwMS00LjQyMyA2LjQ4NCAyMS42NjIgMjEuNjYyIDAgMDEtMy40MjIuMTE3Yy0uMzkzIDAtLjQ4Ni4xMjQtLjQ4Mi41LjAxOSAxLjcuMDA4IDMuNDA2LjAwOCA1LjEwOXYuNTM0SDB6bTMuODMyIDcuNjY5Yy40NyAwIC45LjAxNyAxLjMxOCAwYTEwLjQ0OSAxMC40NDkgMCAwMDEuNzgxLS4xNTMgMS45NDQgMS45NDQgMCAwMDEuNTI3LTEuOTUgMS45NzQgMS45NzQgMCAwMC0xLjI5My0yLjA0IDEwLjc0OCAxMC43NDggMCAwMC0zLjMzMi0uMjI5eiIgZmlsbD0iIzBkMTEzNiIvPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCAyNjkxIiBkPSJNMTA5LjEyNCA5LjM2YTQuMjY5IDQuMjY5IDAgMDAtMi4wMTMtLjAxOSAyLjUyMSAyLjUyMSAwIDAwLTEuOSAyLjQzMWMtLjA2OSAxLjc0MS0uMDQ3IDMuNDg1LS4wNjMgNS4yMjd2LjYyN2gtMy41ODFWNS44MDRoMy40NjZ2MS40MjVhMy4yNjYgMy4yNjYgMCAwMTIuMzQ5LTEuNDc3IDEwLjk0NiAxMC45NDYgMCAwMTEuNzQuMDEzeiIgZmlsbD0iIzAwOGQ3MSIvPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCAyNjkyIiBkPSJNNDguODIzLjY3OGguNTE2YzIuMjM2LjAyIDQuNDc4LS4wNjQgNi43LjA4OWE0LjQxMiA0LjQxMiAwIDAxNC4yODMgMy41ODUgMy44NzYgMy44NzYgMCAwMS0yLjE4MiA0LjQyNS40LjQgMCAwMC0uMDg5LjA2IDExLjAyOCAxMS4wMjggMCAwMTEuNTE1LjkyOSA0LjMzOSA0LjMzOSAwIDAxLjc2NCA1LjQzMSA0Ljc2MSA0Ljc2MSAwIDAxLTQuMTk1IDIuNDI1Yy0yLjM5My4wODQtNC43OTEuMDI3LTcuMTg3LjAzYS41NDYuNTQ2IDAgMDEtLjEzLS4wMzh6bTMuNjYzIDEzLjloMi4xYTcuMDgzIDcuMDgzIDAgMDAuOC0uMDMzIDEuOTMyIDEuOTMyIDAgMDAxLjgxLTEuOCAxLjgxNiAxLjgxNiAwIDAwLTEuNDA2LTJjLTEuMDc4LS4xNjQtMi4xODQtLjE1NS0zLjMwNS0uMjIyem0wLTcuMWMuNzU5IDAgMS40ODguMDE5IDIuMjE2LS4wMDlhMy4xMTkgMy4xMTkgMCAwMC45My0uMTkzIDEuNjUgMS42NSAwIDAwMS4wOTItMS42ODUgMS41NjcgMS41NjcgMCAwMC0xLjIxLTEuNjM0Yy0uOTg3LS4xNi0yLS4xNTktMy4wMjgtLjIyOXoiIGZpbGw9IiMwMDhkNzEiLz48cGF0aCBkYXRhLW5hbWU9IlBhdGggMjY5MyIgZD0iTTM4LjQ1OCA5LjY4NmMuODQ4LS45MzUgMS43NjEtMS44MiAyLjUyNS0yLjgxOWEyLjU0OCAyLjU0OCAwIDAxMi41LTEuMTE0YzEuMDI1LjEgMi4wNjYuMDIxIDMuMjA4LjAyMWwtNC42MzQgNC45ODIgNC43MzQgNi45Yy0xLjMgMC0yLjUxOS0uMDMtMy43MzcuMDE0YTEuMDY5IDEuMDY5IDAgMDEtMS4wOC0uNTc3Yy0uNzY0LTEuMjE0LTEuNTgzLTIuMzkzLTIuNDE2LTMuNjM5LS40LjQzNi0uNzgxLjgzNi0xLjEzOCAxLjI1OC0uMDcxLjA4NC0uMDU4LjI1Mi0uMDU5LjM4MnYyLjUzNmgtMy41NjdWLjM1OGgzLjU1NHY5LjN6IiBmaWxsPSIjMGQxMTM2Ii8+PHBhdGggZGF0YS1uYW1lPSJQYXRoIDI2OTQiIGQ9Ik03My40OTMgMTcuNjQ0aC0zLjE5NWwtLjEyNi0xLjE3NGExMi40MyAxMi40MyAwIDAxLTEuMTg1Ljk2OGMtMS40MS45LTQuNDU5Ljg3My01Ljc1Ny0xLjIzNWEzLjQ0NSAzLjQ0NSAwIDAxMi4zMjktNS4yMjhjMS4wNjktLjI1OCAyLjE3MS0uMzg0IDMuMjU3LS41Ny4wOTItLjAxNi4xODMtLjAzMy4yNzUtLjA0N2EuODA5LjgwOSAwIDAwLjc3MS0uNTg3IDEuMDE4IDEuMDE4IDAgMDAtLjI5NS0xLjAyMyAyLjA3MyAyLjA3MyAwIDAwLTIuMDg1LS40MjggMS44MTEgMS44MTEgMCAwMC0xLjMzOCAxLjM0NWMtLjAxNi4wNS0uMDEzLjEwNi0uMDI2LjE1N2ExLjE0MiAxLjE0MiAwIDAxLS4wNjMuMTQzbC0xLjU0Ny0uM2MtLjUxNy0uMS0xLjAxMS0uMjA5LTEuNTQ2LS4zMjFhMy42OSAzLjY5IDAgMDEuODU5LTIuMDc1IDQuNzg5IDQuNzg5IDAgMDEyLjgyMy0xLjY3OCA3LjIzIDcuMjMgMCAwMTQuMTIyLjI2NCAzLjkgMy45IDAgMDEyLjYyOSAzLjc4MWMuMDU5IDEuNjQ4LjAxIDMuMy4wMjQgNC45NS4wMSAxLjAwNy4wNDggMi4wMTYuMDc0IDMuMDU4em0tMy42MS01LjE3NmMtLjQyMy4wNjMtLjgyLjEtMS4yMDcuMTg1YTE0LjY4OCAxNC42ODggMCAwMC0xLjgzNy40NjhjLS40NDkuMTYxLS41NTcuNi0uNTQ4IDEuMDU5YTEuMTMxIDEuMTMxIDAgMDAuNTg1IDEuMDIxIDIuMjM1IDIuMjM1IDAgMDAyLjY1OC0uNzE5IDMuMTc4IDMuMTc4IDAgMDAuMzQ5LTIuMDEzeiIgZmlsbD0iIzAwOGQ3MSIvPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCAyNjk1IiBkPSJNOTguNTA5IDE3LjYzOWgtMy4ybC0uMTI1LTEuMjI4YS44NjIuODYyIDAgMDAtLjE1NC4xMjljLTEuMzQ1IDEuOTM0LTQuOTE4IDEuODY5LTYuNDE3LjE1OGEzLjQyMyAzLjQyMyAwIDAxMS40NTctNS41NTQgMjkuNzI0IDI5LjcyNCAwIDAxMy4yMzYtLjY1NmMuMjc0LS4wNTMuNTUzLS4wODEuODI2LS4xMzhhLjg4OC44ODggMCAwMC40OS0xLjU2MyAyLjAyNiAyLjAyNiAwIDAwLTIuMDMxLS40ODYgMS44IDEuOCAwIDAwLTEuNDExIDEuMzE2Yy0uMDM0LjEtLjA1LjItLjA4Ni4zNTlsLTMuMTIzLS42MjlhMy45MzEgMy45MzEgMCAwMTEuOTU0LTMuMDM1IDYuNTI3IDYuNTI3IDAgMDE2LjM0My0uMjI0QTMuNjc1IDMuNjc1IDAgMDE5OC40IDkuNDk3Yy4wNjQgMS41ODEuMDIxIDMuMTY3LjAzNyA0Ljc1MS4wMTYgMS4xMTIuMDQ4IDIuMjMuMDcyIDMuMzkxem0tMy41NDUtNS4xODJjLS44LjEyNS0xLjUuMjEzLTIuMTg3LjM0OWEzLjU2MSAzLjU2MSAwIDAwLS45NjYuMzQgMS4wNDcgMS4wNDcgMCAwMC0uNSAxLjA5MiAxLjExNCAxLjExNCAwIDAwLjYzNS45OSAyLjEgMi4xIDAgMDAyLjg1My0xLjMgMTAuNzgyIDEwLjc4MiAwIDAwLjE2NS0xLjQ2OHoiIGZpbGw9IiMwMDhkNzEiLz48cGF0aCBkYXRhLW5hbWU9IlBhdGggMjY5NiIgZD0iTTMyLjM2NyA5LjU0NGwtMy4wNTguOTE4YTcuMDIzIDcuMDIzIDAgMDAtMS4wMDctMS4yMjcgMi42NTMgMi42NTMgMCAwMC00LjE0NyAxLjU3OCA0LjY0OSA0LjY0OSAwIDAwLS4wMDYgMS43NzMgMi41NjEgMi41NjEgMCAwMDIuMjIyIDIuMDUyIDIuNSAyLjUgMCAwMDIuODMtMS40NDRjLjA1My0uMS4yNDMtLjIyNi4zMy0uMi45NjkuMjc2IDEuOTMxLjU3OSAyLjk1Ni44OTRhNy43NzMgNy43NzMgMCAwMS0uMjguNzkyQTUuNTc2IDUuNTc2IDAgMDEyNi45NTQgMThhNi4yODcgNi4yODcgMCAxMS0uMTYzLTEyLjU2OSA1Ljc1MyA1Ljc1MyAwIDAxNC42MzggMi4wODUgNC42MjUgNC42MjUgMCAwMS45MzggMi4wMjh6IiBmaWxsPSIjMGQxMTM2Ii8+PHBhdGggZGF0YS1uYW1lPSJQYXRoIDI2OTciIGQ9Ik03NS45NDcgNS43OTJoOS42NzRjLjAwNi4xMjYuMDE4LjI1Mi4wMTguMzc5IDAgLjYzOS0uMDM4IDEuMjgxLjAxMyAxLjkxNmExLjQyNCAxLjQyNCAwIDAxLS40ODMgMS4xODVjLTEuNTcyIDEuNjI3LTMuMTIzIDMuMjc0LTQuNjgxIDQuOTE0LS4wODguMDkzLS4xNjkuMTkyLS4zMDcuMzUxSDg1Ljd2My4xaC05LjljLS4wMS0uMTUtLjAyNi0uMjkxLS4wMjYtLjQzMiAwLS43MzIuMDIyLTEuNDY1LS4wMS0yLjJhMS4yNDEgMS4yNDEgMCAwMS40LS45ODNjMS41MjYtMS42IDMuMDM2LTMuMjA5IDQuNTUxLTQuODE3LjA4LS4wODUuMTU1LS4xNzUuMjc5LS4zMTdoLTUuMDUzeiIgZmlsbD0iIzAwOGQ3MSIvPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCAyNjk4IiBkPSJNMTQuNDg1IDE3LjYyNlY1LjgwNWgzLjU2N3YxMS44MjF6IiBmaWxsPSIjMGQxMTM2Ii8+PHBhdGggZGF0YS1uYW1lPSJQYXRoIDI2OTkiIGQ9Ik0xOC4zODYgMi4xMzhhMi4xIDIuMSAwIDAxLTIuMTQ4IDIuMSAyLjEzOSAyLjEzOSAwIDAxLTIuMDc4LTIuMTRBMi4xNDEgMi4xNDEgMCAwMTE2LjI4Ni4wMDVhMi4wODIgMi4wODIgMCAwMTIuMSAyLjEzM3oiIGZpbGw9IiMwMDhkNzEiLz48L2c+PC9zdmc+" class="mr">
+            <button class="buttons mr">Grocery</button>
+        </div>
+        
+        <div id="navbar_right">
+            <button class="mr nbot">Offer</button>
+            <button class="mr nbot" id="help">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 14 14"><path id="Path_111" data-name="Path 111" d="M269.443,404.312a7,7,0,1,0,7,7,6.98,6.98,0,0,0-7-7Zm.635,10.818a.3.3,0,0,1-.319.319h-.635a.3.3,0,0,1-.319-.319v-.635a.3.3,0,0,1,.319-.319h.635a.3.3,0,0,1,.319.319Zm.859-2.832c-.446.382-.763.637-.859.987a.308.308,0,0,1-.319.255h-.635a.309.309,0,0,1-.319-.35,2.988,2.988,0,0,1,1.336-1.876c.574-.446.892-.732.892-1.274a1.591,1.591,0,1,0-3.182,0v.191a.3.3,0,0,1-.224.351l-.6.189a.318.318,0,0,1-.414-.253,2.363,2.363,0,0,1-.033-.479,2.864,2.864,0,0,1,5.729,0,2.792,2.792,0,0,1-1.369,2.259Zm0,0" transform="translate(-262.442 -404.312)" fill="currentColor"></path></svg>
+                Need Help</button>
+            <button onclick="join_button()" class="buttons mr join_button" >Join</button>
+        </div>
+    </div>
+    <div id="navbar2">
+        <div id="navbar_left">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDkuMTI0IiBoZWlnaHQ9IjE4Ij48ZyBkYXRhLW5hbWU9Ikdyb3VwIDI4MjkiPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCAyNjkwIiBkPSJNMCAuNjUybDIuMDcyLjAyNkMzLjgxNC42OTkgNS41NjMuNjI3IDcuMjk2Ljc2M2E1LjIgNS4yIDAgMDE0LjggNC4xNjEgNS4yMjIgNS4yMjIgMCAwMS00LjQyMyA2LjQ4NCAyMS42NjIgMjEuNjYyIDAgMDEtMy40MjIuMTE3Yy0uMzkzIDAtLjQ4Ni4xMjQtLjQ4Mi41LjAxOSAxLjcuMDA4IDMuNDA2LjAwOCA1LjEwOXYuNTM0SDB6bTMuODMyIDcuNjY5Yy40NyAwIC45LjAxNyAxLjMxOCAwYTEwLjQ0OSAxMC40NDkgMCAwMDEuNzgxLS4xNTMgMS45NDQgMS45NDQgMCAwMDEuNTI3LTEuOTUgMS45NzQgMS45NzQgMCAwMC0xLjI5My0yLjA0IDEwLjc0OCAxMC43NDggMCAwMC0zLjMzMi0uMjI5eiIgZmlsbD0iIzBkMTEzNiIvPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCAyNjkxIiBkPSJNMTA5LjEyNCA5LjM2YTQuMjY5IDQuMjY5IDAgMDAtMi4wMTMtLjAxOSAyLjUyMSAyLjUyMSAwIDAwLTEuOSAyLjQzMWMtLjA2OSAxLjc0MS0uMDQ3IDMuNDg1LS4wNjMgNS4yMjd2LjYyN2gtMy41ODFWNS44MDRoMy40NjZ2MS40MjVhMy4yNjYgMy4yNjYgMCAwMTIuMzQ5LTEuNDc3IDEwLjk0NiAxMC45NDYgMCAwMTEuNzQuMDEzeiIgZmlsbD0iIzAwOGQ3MSIvPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCAyNjkyIiBkPSJNNDguODIzLjY3OGguNTE2YzIuMjM2LjAyIDQuNDc4LS4wNjQgNi43LjA4OWE0LjQxMiA0LjQxMiAwIDAxNC4yODMgMy41ODUgMy44NzYgMy44NzYgMCAwMS0yLjE4MiA0LjQyNS40LjQgMCAwMC0uMDg5LjA2IDExLjAyOCAxMS4wMjggMCAwMTEuNTE1LjkyOSA0LjMzOSA0LjMzOSAwIDAxLjc2NCA1LjQzMSA0Ljc2MSA0Ljc2MSAwIDAxLTQuMTk1IDIuNDI1Yy0yLjM5My4wODQtNC43OTEuMDI3LTcuMTg3LjAzYS41NDYuNTQ2IDAgMDEtLjEzLS4wMzh6bTMuNjYzIDEzLjloMi4xYTcuMDgzIDcuMDgzIDAgMDAuOC0uMDMzIDEuOTMyIDEuOTMyIDAgMDAxLjgxLTEuOCAxLjgxNiAxLjgxNiAwIDAwLTEuNDA2LTJjLTEuMDc4LS4xNjQtMi4xODQtLjE1NS0zLjMwNS0uMjIyem0wLTcuMWMuNzU5IDAgMS40ODguMDE5IDIuMjE2LS4wMDlhMy4xMTkgMy4xMTkgMCAwMC45My0uMTkzIDEuNjUgMS42NSAwIDAwMS4wOTItMS42ODUgMS41NjcgMS41NjcgMCAwMC0xLjIxLTEuNjM0Yy0uOTg3LS4xNi0yLS4xNTktMy4wMjgtLjIyOXoiIGZpbGw9IiMwMDhkNzEiLz48cGF0aCBkYXRhLW5hbWU9IlBhdGggMjY5MyIgZD0iTTM4LjQ1OCA5LjY4NmMuODQ4LS45MzUgMS43NjEtMS44MiAyLjUyNS0yLjgxOWEyLjU0OCAyLjU0OCAwIDAxMi41LTEuMTE0YzEuMDI1LjEgMi4wNjYuMDIxIDMuMjA4LjAyMWwtNC42MzQgNC45ODIgNC43MzQgNi45Yy0xLjMgMC0yLjUxOS0uMDMtMy43MzcuMDE0YTEuMDY5IDEuMDY5IDAgMDEtMS4wOC0uNTc3Yy0uNzY0LTEuMjE0LTEuNTgzLTIuMzkzLTIuNDE2LTMuNjM5LS40LjQzNi0uNzgxLjgzNi0xLjEzOCAxLjI1OC0uMDcxLjA4NC0uMDU4LjI1Mi0uMDU5LjM4MnYyLjUzNmgtMy41NjdWLjM1OGgzLjU1NHY5LjN6IiBmaWxsPSIjMGQxMTM2Ii8+PHBhdGggZGF0YS1uYW1lPSJQYXRoIDI2OTQiIGQ9Ik03My40OTMgMTcuNjQ0aC0zLjE5NWwtLjEyNi0xLjE3NGExMi40MyAxMi40MyAwIDAxLTEuMTg1Ljk2OGMtMS40MS45LTQuNDU5Ljg3My01Ljc1Ny0xLjIzNWEzLjQ0NSAzLjQ0NSAwIDAxMi4zMjktNS4yMjhjMS4wNjktLjI1OCAyLjE3MS0uMzg0IDMuMjU3LS41Ny4wOTItLjAxNi4xODMtLjAzMy4yNzUtLjA0N2EuODA5LjgwOSAwIDAwLjc3MS0uNTg3IDEuMDE4IDEuMDE4IDAgMDAtLjI5NS0xLjAyMyAyLjA3MyAyLjA3MyAwIDAwLTIuMDg1LS40MjggMS44MTEgMS44MTEgMCAwMC0xLjMzOCAxLjM0NWMtLjAxNi4wNS0uMDEzLjEwNi0uMDI2LjE1N2ExLjE0MiAxLjE0MiAwIDAxLS4wNjMuMTQzbC0xLjU0Ny0uM2MtLjUxNy0uMS0xLjAxMS0uMjA5LTEuNTQ2LS4zMjFhMy42OSAzLjY5IDAgMDEuODU5LTIuMDc1IDQuNzg5IDQuNzg5IDAgMDEyLjgyMy0xLjY3OCA3LjIzIDcuMjMgMCAwMTQuMTIyLjI2NCAzLjkgMy45IDAgMDEyLjYyOSAzLjc4MWMuMDU5IDEuNjQ4LjAxIDMuMy4wMjQgNC45NS4wMSAxLjAwNy4wNDggMi4wMTYuMDc0IDMuMDU4em0tMy42MS01LjE3NmMtLjQyMy4wNjMtLjgyLjEtMS4yMDcuMTg1YTE0LjY4OCAxNC42ODggMCAwMC0xLjgzNy40NjhjLS40NDkuMTYxLS41NTcuNi0uNTQ4IDEuMDU5YTEuMTMxIDEuMTMxIDAgMDAuNTg1IDEuMDIxIDIuMjM1IDIuMjM1IDAgMDAyLjY1OC0uNzE5IDMuMTc4IDMuMTc4IDAgMDAuMzQ5LTIuMDEzeiIgZmlsbD0iIzAwOGQ3MSIvPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCAyNjk1IiBkPSJNOTguNTA5IDE3LjYzOWgtMy4ybC0uMTI1LTEuMjI4YS44NjIuODYyIDAgMDAtLjE1NC4xMjljLTEuMzQ1IDEuOTM0LTQuOTE4IDEuODY5LTYuNDE3LjE1OGEzLjQyMyAzLjQyMyAwIDAxMS40NTctNS41NTQgMjkuNzI0IDI5LjcyNCAwIDAxMy4yMzYtLjY1NmMuMjc0LS4wNTMuNTUzLS4wODEuODI2LS4xMzhhLjg4OC44ODggMCAwMC40OS0xLjU2MyAyLjAyNiAyLjAyNiAwIDAwLTIuMDMxLS40ODYgMS44IDEuOCAwIDAwLTEuNDExIDEuMzE2Yy0uMDM0LjEtLjA1LjItLjA4Ni4zNTlsLTMuMTIzLS42MjlhMy45MzEgMy45MzEgMCAwMTEuOTU0LTMuMDM1IDYuNTI3IDYuNTI3IDAgMDE2LjM0My0uMjI0QTMuNjc1IDMuNjc1IDAgMDE5OC40IDkuNDk3Yy4wNjQgMS41ODEuMDIxIDMuMTY3LjAzNyA0Ljc1MS4wMTYgMS4xMTIuMDQ4IDIuMjMuMDcyIDMuMzkxem0tMy41NDUtNS4xODJjLS44LjEyNS0xLjUuMjEzLTIuMTg3LjM0OWEzLjU2MSAzLjU2MSAwIDAwLS45NjYuMzQgMS4wNDcgMS4wNDcgMCAwMC0uNSAxLjA5MiAxLjExNCAxLjExNCAwIDAwLjYzNS45OSAyLjEgMi4xIDAgMDAyLjg1My0xLjMgMTAuNzgyIDEwLjc4MiAwIDAwLjE2NS0xLjQ2OHoiIGZpbGw9IiMwMDhkNzEiLz48cGF0aCBkYXRhLW5hbWU9IlBhdGggMjY5NiIgZD0iTTMyLjM2NyA5LjU0NGwtMy4wNTguOTE4YTcuMDIzIDcuMDIzIDAgMDAtMS4wMDctMS4yMjcgMi42NTMgMi42NTMgMCAwMC00LjE0NyAxLjU3OCA0LjY0OSA0LjY0OSAwIDAwLS4wMDYgMS43NzMgMi41NjEgMi41NjEgMCAwMDIuMjIyIDIuMDUyIDIuNSAyLjUgMCAwMDIuODMtMS40NDRjLjA1My0uMS4yNDMtLjIyNi4zMy0uMi45NjkuMjc2IDEuOTMxLjU3OSAyLjk1Ni44OTRhNy43NzMgNy43NzMgMCAwMS0uMjguNzkyQTUuNTc2IDUuNTc2IDAgMDEyNi45NTQgMThhNi4yODcgNi4yODcgMCAxMS0uMTYzLTEyLjU2OSA1Ljc1MyA1Ljc1MyAwIDAxNC42MzggMi4wODUgNC42MjUgNC42MjUgMCAwMS45MzggMi4wMjh6IiBmaWxsPSIjMGQxMTM2Ii8+PHBhdGggZGF0YS1uYW1lPSJQYXRoIDI2OTciIGQ9Ik03NS45NDcgNS43OTJoOS42NzRjLjAwNi4xMjYuMDE4LjI1Mi4wMTguMzc5IDAgLjYzOS0uMDM4IDEuMjgxLjAxMyAxLjkxNmExLjQyNCAxLjQyNCAwIDAxLS40ODMgMS4xODVjLTEuNTcyIDEuNjI3LTMuMTIzIDMuMjc0LTQuNjgxIDQuOTE0LS4wODguMDkzLS4xNjkuMTkyLS4zMDcuMzUxSDg1Ljd2My4xaC05LjljLS4wMS0uMTUtLjAyNi0uMjkxLS4wMjYtLjQzMiAwLS43MzIuMDIyLTEuNDY1LS4wMS0yLjJhMS4yNDEgMS4yNDEgMCAwMS40LS45ODNjMS41MjYtMS42IDMuMDM2LTMuMjA5IDQuNTUxLTQuODE3LjA4LS4wODUuMTU1LS4xNzUuMjc5LS4zMTdoLTUuMDUzeiIgZmlsbD0iIzAwOGQ3MSIvPjxwYXRoIGRhdGEtbmFtZT0iUGF0aCAyNjk4IiBkPSJNMTQuNDg1IDE3LjYyNlY1LjgwNWgzLjU2N3YxMS44MjF6IiBmaWxsPSIjMGQxMTM2Ii8+PHBhdGggZGF0YS1uYW1lPSJQYXRoIDI2OTkiIGQ9Ik0xOC4zODYgMi4xMzhhMi4xIDIuMSAwIDAxLTIuMTQ4IDIuMSAyLjEzOSAyLjEzOSAwIDAxLTIuMDc4LTIuMTRBMi4xNDEgMi4xNDEgMCAwMTE2LjI4Ni4wMDVhMi4wODIgMi4wODIgMCAwMTIuMSAyLjEzM3oiIGZpbGw9IiMwMDhkNzEiLz48L2c+PC9zdmc+" class="mr">
+            <button class="buttons mr">Grocery</button>
+        </div>
+        <form action="">
+            <input type="text" placeholder="Search your products from here" id="navbar_search" autocomplete="off">
+        </form>
+        <div id="navbar_right">
+            <button class="mr nbot">Offer</button>
+            <button class="mr nbot" id="help">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 14 14"><path id="Path_111" data-name="Path 111" d="M269.443,404.312a7,7,0,1,0,7,7,6.98,6.98,0,0,0-7-7Zm.635,10.818a.3.3,0,0,1-.319.319h-.635a.3.3,0,0,1-.319-.319v-.635a.3.3,0,0,1,.319-.319h.635a.3.3,0,0,1,.319.319Zm.859-2.832c-.446.382-.763.637-.859.987a.308.308,0,0,1-.319.255h-.635a.309.309,0,0,1-.319-.35,2.988,2.988,0,0,1,1.336-1.876c.574-.446.892-.732.892-1.274a1.591,1.591,0,1,0-3.182,0v.191a.3.3,0,0,1-.224.351l-.6.189a.318.318,0,0,1-.414-.253,2.363,2.363,0,0,1-.033-.479,2.864,2.864,0,0,1,5.729,0,2.792,2.792,0,0,1-1.369,2.259Zm0,0" transform="translate(-262.442 -404.312)" fill="currentColor"></path></svg>
+                Need Help</button>
+            <button onclick="join_button()" class="buttons mr join_button" >Join</button>
+        </div>
+    </div>
+
+
+
+    <div id="img">
+        
+    </div>
+    <section id="sect">
+        <h1 id="secth">Groceries Delivered in 90 Minute</h1>
+        <p id="sectp">Get your healthy foods & snacks delivered at your doorsteps all day everyday</p>
+        <div id="search">
+            <form action="">
+                <input  id="sectin" type="text" placeholder="Search..." autocomplete="off">
+            </form>
+        </div>
+    </section>
+    <section class="slider_con">
+        <div class="carusel">
+            <div class="slider">
+                <div class="slider_card">
+                    <img src="https://shop.redq.now.sh/_next/static/images/offer-1-1f7a4c9ea0ba5a216bc7af1f60d044e0.png" alt="">
+                </div>
+                <div class="slider_card">
+                    <img src="https://shop.redq.now.sh/_next/static/images/offer-2-90d3534e1ad62a8b8a977f1290e61e9f.png" alt="">
+                </div>
+                <div class="slider_card">
+                    <img src="https://shop.redq.now.sh/_next/static/images/offer-3-2f8285b13bef950f843cb4147666af6e.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="con">
+        <div id="side_navbar">
+            <div id="bar">
+                <!-- <div class="bar_items">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 18 18"><g data-name="Layer 2"><g data-name="Layer 3"><path data-name="Path 16" d="M10.235 3.966a2.943 2.943 0 00-1.38-2.122c-.528-.243-.485-.618-.338-.854s.41-.231.832.164a5 5 0 011.368 2.87z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10" stroke-width=".416"></path><path data-name="Path 17" d="M6.514 7.976a4.757 4.757 0 109.513 0c0-2.627-1.5-4.976-4.757-4.73-2.619.197-4.767 1.656-4.756 4.73z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.387"></path><path data-name="Path 18" d="M6.514 7.976a4.757 4.757 0 109.513 0c0-2.627-1.5-4.976-4.757-4.73-2.619.197-4.767 1.656-4.756 4.73z" fill="currentColor"></path><path data-name="Path 19" d="M14.731 5.045s1.506 1.544.714 2.993c-.287.526-1.2.192-1.234-.485s.25-1.27-.236-2.05c-.349-.566.26-.878.756-.458z" fill="#fff"></path><path data-name="Path 20" d="M10.834 3.413s1.161-4.315 6.469-2.048c0 0-2.459 4.074-6.469 2.048z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.387"></path><path data-name="Path 21" d="M10.834 3.413s1.161-4.315 6.469-2.048c0 0-2.459 4.074-6.469 2.048z" fill="#fff"></path><path data-name="Path 22" d="M10.516 4.513a10.193 10.193 0 015.63-2.863c-2.736-.521-6.018 1.748-6.018 1.748s.289.864.388 1.115z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".035"></path><path data-name="Path 23" d="M10.895 9.896h0c-.268-.877-1.969-1.65-4.234-1.72a5.286 5.286 0 00-4.515 1.858 2 2 0 00-.551 1.308h0a4.934 4.934 0 004.768 4.426c3.133.223 3.786-.96 4.225-1.9a6.363 6.363 0 00.307-3.972z" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.19"></path><path data-name="Path 24" d="M10.895 9.896h0c-.268-.877-1.969-1.65-4.234-1.72a5.286 5.286 0 00-4.515 1.858 2 2 0 00-.551 1.308h0a4.934 4.934 0 004.768 4.426c3.133.223 3.786-.96 4.225-1.9a6.363 6.363 0 00.307-3.972z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.387"></path><path data-name="Path 25" d="M10.895 9.896h0c-.268-.877-1.969-1.65-4.234-1.72a5.286 5.286 0 00-4.515 1.858 2 2 0 00-.551 1.308h0a4.934 4.934 0 004.768 4.426c3.133.223 3.786-.96 4.225-1.9a6.363 6.363 0 00.307-3.972z" fill="#fff" stroke="currentColor" stroke-miterlimit="10" stroke-width=".069"></path><path data-name="Path 26" d="M10.895 9.896c-.268-.877-1.969-1.65-4.234-1.72a5.286 5.286 0 00-4.515 1.858 2 2 0 00-.551 1.308 4.934 4.934 0 004.768 4.426c3.133.223 3.786-.96 4.225-1.9a6.363 6.363 0 00.307-3.972z" fill="currentColor"></path><path data-name="Path 27" d="M1.595 11.342a4.375 4.375 0 00.128.684 2.664 2.664 0 00.3.335c1.067 1.028 4.409 1.723 7.173 1 .883-.23 1.522-1.3.526-1.851-.139-.076-.243-.184-.208-.277s.089-.106.269-.1a1.2 1.2 0 001.232-.735 4.126 4.126 0 00-.121-.509c-.272-.876-1.974-1.644-4.239-1.715a5.286 5.286 0 00-4.515 1.858 2.024 2.024 0 00-.545 1.31z" fill="#fff"></path><path data-name="Path 28" d="M1.921 9.984a1.569 1.569 0 00.1 2.377c1.066 1.028 4.409 1.723 7.173 1 .883-.23 1.522-1.3.526-1.851-.139-.076-.243-.184-.208-.277s.089-.106.269-.1a1.183 1.183 0 001.259-.823 1.321 1.321 0 00-.785-1.413" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".416"></path><path data-name="Path 29" d="M8.013 10.78c-.018.471-.87.791-1.9.752s-1.856-.423-1.837-.9.87-.963 1.9-.924 1.855.605 1.837 1.072z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".555"></path><path data-name="Path 30" d="M9.722 12.123a2.411 2.411 0 01.467 2.08 2.759 2.759 0 01-1.5 2.427" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".555"></path></g></g></svg>
+                    Fruits Vegetables</div> -->
+                
+            </div>
+        </div>
+        <div id="con_center">
+                <div class="card" id="card_0" onclick="card_click(0)">
+                    <h1 id="prod_description_0" style="display: none;">A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called plantains distinguishing them from dessert bananas.</h1>
+                    <h1 id="prod_tag" style="display: none;"></h1>
+                    <div>
+                        <div class="prod_discount_con" id="prod_discount_con_0">
+                            <div class="prod_discount" id="prod_discount_0" style="">10%</div>
+                        </div>
+                        <div class="prod_image_con" id="prod_image_con_0">
+                            <img class="prod_image" id="prod_image_0" src="http://s3.amazonaws.com/redqteam.com/pickbazar/banana_thumb.png" alt="">
+                        </div>
+                        <h1 class="prod_name" id="prod_name_0">Banana</h1>
+                        <p class="prod_ccal" id="prod_ccal_0">8 pc(s)</p>
+                    </div>
+                    <div>
+                        <p class="prod_undiscounted_prize_line">_____</p>
+                        <h1 class="prod_undiscounted_prize" id="prod_undiscounted_prize_0" style="">15$</h1>
+                        <div class="cda">
+                            <div class="prod_prize_dol">
+                                <h1 class="prod_prize">$</h1>
+                                <h1 class="prod_prize" id="prod_prize_0">10</h1>    
+                            </div>
+                            <div class="product_details_number_all" id="product_details_number_all_0" onclick="product_details_number_all()">
+                                <div  class="product_details_number_minus" onclick="product_details_number_minus(0)" >
+                                    <svg  xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg>
+                                </div>
+                                <span class="product_details_number" id="product_details_number_0">0</span>
+                                <svg class="product_details_number_plus" onclick="product_details_number_plus(0)" xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 12 12"><g id="Group_3351" data-name="Group 3351" transform="translate(-1367 -190)"><rect data-name="Rectangle 520" width="12" height="2" rx="1" transform="translate(1367 195)" fill="currentColor"></rect><rect data-name="Rectangle 521" width="12" height="2" rx="1" transform="translate(1374 190) rotate(90)" fill="currentColor"></rect></g></svg>
+                            </div>
+                            <div class="cba" id="cba_0">
+                                <button class="prod_add_button" onclick="prod_add_button(0)">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                       
+         
+                     
+
+
+
+            
+        </div>
+
+
+        
+    </div>
+
+    <div class="product_details">
+        <div class="product_details_card">
+            
+            <div class="product_details_left">
+                <img style="width: 300px; height: 300px;" class="product_details_image" id="product_details_image_N" src="http://s3.amazonaws.com/redqteam.com/pickbazar/banana_thumb.png" alt="">
+                <div class="product_details_images">
+
+                </div>
+            </div>
+            <div class="product_details_right">
+                <div class="product_details_right_top">
+                    <div class="product_details_close_con">
+                        <svg class="product_details_close" onclick="product_details_close()" xmlns="http://www.w3.org/2000/svg" width="10.003" height="10" viewBox="0 0 10.003 10"><path data-name="_ionicons_svg_ios-close (5)" d="M166.686,165.55l3.573-3.573a.837.837,0,0,0-1.184-1.184l-3.573,3.573-3.573-3.573a.837.837,0,1,0-1.184,1.184l3.573,3.573-3.573,3.573a.837.837,0,0,0,1.184,1.184l3.573-3.573,3.573,3.573a.837.837,0,0,0,1.184-1.184Z" transform="translate(-160.5 -160.55)" fill="currentColor"></path></svg>
+                    </div>
+                    <div class="product_details_right_xalt">
+                        <h1 class="product_details_name">Banana</h1>
+                        <p class="product_details_ccal">8 pc(s)</p>
+                        
+                        <p class="product_details_text"></p>
+                    </div>
+                </div>
+                <div class="product_details_right_bottom">
+                    <div>
+                        <p class="product_details_discounted"></p>
+                        <p class="product_details_prize">$10</p>
+                    </div>
+                    <div class="product_details_number_con">
+                        <div class="product_details_number_all" id="product_details_number_all_N">
+                            <div  class="product_details_number_minus" onclick="product_details_number_minus()">
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg>
+                            </div>
+                            <span class="product_details_number" id="product_details_number_N">0</span>
+                            <svg class="product_details_number_plus" onclick="product_details_number_plus()" xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 12 12"><g id="Group_3351" data-name="Group 3351" transform="translate(-1367 -190)"><rect data-name="Rectangle 520" width="12" height="2" rx="1" transform="translate(1367 195)" fill="currentColor"></rect><rect data-name="Rectangle 521" width="12" height="2" rx="1" transform="translate(1374 190) rotate(90)" fill="currentColor"></rect></g></svg>
+                        </div>
+                        <div class="cba" id="cba_N">
+                            <button class="prod_add_button" onclick="prod_add_button()">Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product_details_tags_con">
+                        <span class="product_details_tags"></span>
+                        <!-- <span class="product_details_tags">Fruits</span> -->
+                                            
+
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+
+        $(document).ready(function(){
+            $.ajax({
+                url:"http://35.225.243.133/api/categories/",
+                method:"GET",
+                success:function(e){
+                    console.log(e);  
+                    alert("SUCCESS");
+                    for(i in e){
+                        console.log(e[i]);
+                        var id=e[i]["id"];
+                        var title=e[i]["title"];
+                        var icon_svg=e[i]["icon_svg"];
+                        
+                        $("#bar").append(`<div class="bar_items" id="bar_item_${id}">
+                    <svg xmlns="${icon_svg}" width="18px" height="18px" viewBox="0 0 18 18"><g data-name="Layer 2"><g data-name="Layer 3"><path data-name="Path 16" d="M10.235 3.966a2.943 2.943 0 00-1.38-2.122c-.528-.243-.485-.618-.338-.854s.41-.231.832.164a5 5 0 011.368 2.87z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10" stroke-width=".416"></path><path data-name="Path 17" d="M6.514 7.976a4.757 4.757 0 109.513 0c0-2.627-1.5-4.976-4.757-4.73-2.619.197-4.767 1.656-4.756 4.73z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.387"></path><path data-name="Path 18" d="M6.514 7.976a4.757 4.757 0 109.513 0c0-2.627-1.5-4.976-4.757-4.73-2.619.197-4.767 1.656-4.756 4.73z" fill="currentColor"></path><path data-name="Path 19" d="M14.731 5.045s1.506 1.544.714 2.993c-.287.526-1.2.192-1.234-.485s.25-1.27-.236-2.05c-.349-.566.26-.878.756-.458z" fill="#fff"></path><path data-name="Path 20" d="M10.834 3.413s1.161-4.315 6.469-2.048c0 0-2.459 4.074-6.469 2.048z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.387"></path><path data-name="Path 21" d="M10.834 3.413s1.161-4.315 6.469-2.048c0 0-2.459 4.074-6.469 2.048z" fill="#fff"></path><path data-name="Path 22" d="M10.516 4.513a10.193 10.193 0 015.63-2.863c-2.736-.521-6.018 1.748-6.018 1.748s.289.864.388 1.115z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".035"></path><path data-name="Path 23" d="M10.895 9.896h0c-.268-.877-1.969-1.65-4.234-1.72a5.286 5.286 0 00-4.515 1.858 2 2 0 00-.551 1.308h0a4.934 4.934 0 004.768 4.426c3.133.223 3.786-.96 4.225-1.9a6.363 6.363 0 00.307-3.972z" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.19"></path><path data-name="Path 24" d="M10.895 9.896h0c-.268-.877-1.969-1.65-4.234-1.72a5.286 5.286 0 00-4.515 1.858 2 2 0 00-.551 1.308h0a4.934 4.934 0 004.768 4.426c3.133.223 3.786-.96 4.225-1.9a6.363 6.363 0 00.307-3.972z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.387"></path><path data-name="Path 25" d="M10.895 9.896h0c-.268-.877-1.969-1.65-4.234-1.72a5.286 5.286 0 00-4.515 1.858 2 2 0 00-.551 1.308h0a4.934 4.934 0 004.768 4.426c3.133.223 3.786-.96 4.225-1.9a6.363 6.363 0 00.307-3.972z" fill="#fff" stroke="currentColor" stroke-miterlimit="10" stroke-width=".069"></path><path data-name="Path 26" d="M10.895 9.896c-.268-.877-1.969-1.65-4.234-1.72a5.286 5.286 0 00-4.515 1.858 2 2 0 00-.551 1.308 4.934 4.934 0 004.768 4.426c3.133.223 3.786-.96 4.225-1.9a6.363 6.363 0 00.307-3.972z" fill="currentColor"></path><path data-name="Path 27" d="M1.595 11.342a4.375 4.375 0 00.128.684 2.664 2.664 0 00.3.335c1.067 1.028 4.409 1.723 7.173 1 .883-.23 1.522-1.3.526-1.851-.139-.076-.243-.184-.208-.277s.089-.106.269-.1a1.2 1.2 0 001.232-.735 4.126 4.126 0 00-.121-.509c-.272-.876-1.974-1.644-4.239-1.715a5.286 5.286 0 00-4.515 1.858 2.024 2.024 0 00-.545 1.31z" fill="#fff"></path><path data-name="Path 28" d="M1.921 9.984a1.569 1.569 0 00.1 2.377c1.066 1.028 4.409 1.723 7.173 1 .883-.23 1.522-1.3.526-1.851-.139-.076-.243-.184-.208-.277s.089-.106.269-.1a1.183 1.183 0 001.259-.823 1.321 1.321 0 00-.785-1.413" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".416"></path><path data-name="Path 29" d="M8.013 10.78c-.018.471-.87.791-1.9.752s-1.856-.423-1.837-.9.87-.963 1.9-.924 1.855.605 1.837 1.072z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".555"></path><path data-name="Path 30" d="M9.722 12.123a2.411 2.411 0 01.467 2.08 2.759 2.759 0 01-1.5 2.427" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".555"></path></g></g></svg>
+                    ${title}</div>`)
+
+                        // alert(id);
+                        
+                    } 
+                },
+                error:function(e){
+                    alert("ERROR")
+                    console.log(e);
+                }
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            $.ajax({
+                url:"http://35.225.243.133/api/products/",
+                method:"GET",
+                success:function(e){
+                    console.log(e);  
+                    alert("SUCCESS");
+                    for(i in e){
+                        console.log(e[i]);
+                        var id=e[i]["id"];
+                        var title=e[i]["title"];
+                        var description=e[i]["description"];
+                        var price=e[i]["price"];
+                        var discount_price=e[i]["discount_price"];
+                        var amount_by_unit=e[i]["amount_by_unit"];
+                        var unit=e[i]["unit"];
+                        var main_image=e[i]["main_image"];
+                        
+
+                        // alert(id);
+                        $("#con_center").append(`<div class="card" id="card_${id}" onclick="card_click(${id})">
+                    <h1 id="prod_description_${id}" style="display: none;">${description}</h1>
+                    <h1 id="prod_tag" style="display: none;">${title}</h1>
+                    <div>
+                        <div class="prod_discount_con" id="prod_discount_con_${id}">
+                            <div class="prod_discount" id="prod_discount_${id}" style="">10%</div>
+                        </div>
+                        <div class="prod_image_con" id="prod_image_con_${id}">
+                            <img class="prod_image" id="prod_image_${id}" src="${main_image}" alt="">
+                        </div>
+                        <h1 class="prod_name" id="prod_name_${id}">${title}</h1>
+                        <p class="prod_ccal" id="prod_ccal_${id}">${amount_by_unit} ${unit}</p>
+                    </div>
+                    <div>
+                        <p class="prod_undiscounted_prize_line">_____</p>
+                        <h1 class="prod_undiscounted_prize" id="prod_undiscounted_prize_${id}" style="">${discount_price}</h1>
+                        <div class="cda">
+                            <div class="prod_prize_dol">
+                                <h1 class="prod_prize">$</h1>
+                                <h1 class="prod_prize" id="prod_prize_${id}">${price}</h1>    
+                            </div>
+                            <div class="product_details_number_all" id="product_details_number_all_${id}" onclick="product_details_number_all()">
+                                <div  class="product_details_number_minus" onclick="product_details_number_minus(${id})" >
+                                    <svg  xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg>
+                                </div>
+                                <span class="product_details_number" id="product_details_number_${id}">0</span>
+                                <svg class="product_details_number_plus" onclick="product_details_number_plus(${id})" xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 12 12"><g id="Group_3351" data-name="Group 3351" transform="translate(-1367 -190)"><rect data-name="Rectangle 520" width="12" height="2" rx="1" transform="translate(1367 195)" fill="currentColor"></rect><rect data-name="Rectangle 521" width="12" height="2" rx="1" transform="translate(1374 190) rotate(90)" fill="currentColor"></rect></g></svg>
+                            </div>
+                            <div class="cba" id="cba_${id}">
+                                <button class="prod_add_button" onclick="prod_add_button(${id})">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>`);
+                    } 
+                },
+                error:function(e){
+                    alert("ERROR")
+                    console.log(e);
+                }
+            });
+
+        });
+        // $.ajax({
+        //     url:"http://35.225.243.133/api/products/",
+        //     method:"GET",
+        //     success:function(e){
+        //         console.log(e);  
+        //         alert("SUCCESS"); 
+        //     },
+        //     error:function(e){
+        //         alert("ERROR")
+        //         console.log(e);
+        //     }
+        // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var cardCheck=0;
+        var glob_N,n;
+
+        window.addEventListener('scroll', function() {
+           
+            var a=document.querySelector("#sectin");
+            var c=true;
+            var n=document.querySelector("#sectin");
+            
+            
+            
+            if(n.getBoundingClientRect().top<0){
+
+                $("#navbar2").css("transition",'0.3s');
+                $("#navbar2").css("opacity","1");
+                $("#navbar2").css("visibility","visible");
+
+            }
+            else{
+                $("#navbar2").css("transition",'0.1s');
+                $("#navbar2").css("opacity","0");
+                $("#navbar2").css("visibility","hidden");
+            
+               
+            }
+                        
+        });
+
+
+
+
+
+
+        function selected_items_bar(){
+            $(".items_bar").toggleClass("items_bar_toggle");
+        }
+      
+
+
+
+
+
+
+        function join_button(){
+            $(".join_background").css("display","flex");
+            $("body").css("overflow", "hidden");
+        }
+
+            
+
+        function join_background_close(){
+            $(".join_background").css("display","none");
+            $("body").css("overflow", "visible");
+        }
+
+
+        
+
+        function product_details_close(){
+            $(".product_details").css("display","none");
+            $("body").css("overflow", "visible");
+        }
+
+
+        
+        
+        function product_details_number_plus(n){
+            var total=parseFloat($("#selected_items_prize").text());
+            // alert(total);
+            if((typeof n)=="undefined"){
+                // alert(glob_N);
+                var a=parseFloat($(`#product_details_number_${glob_N}`).text());
+                a=a+1;
+                document.querySelector(`#product_details_number_${glob_N}`).innerText=a;
+                document.querySelector(`#product_details_number_N`).innerText=a;
+                // alert(parseFloat($(`#prod_prize_${n}`).text()));
+                // alert(total+parseFloat($(`#prod_prize_${glob_N}`).text()));
+                total=(total+(parseFloat($(`#prod_prize_${glob_N}`).text()))).toFixed(2);
+
+
+
+                document.querySelector(`#items_bar_number_${glob_N}`).innerText=a;               
+                $(`#items_bar_number2_${glob_N}`).text(parseInt($(`#items_bar_number2_${glob_N}`).text())+1);
+
+
+
+                var total2=parseFloat($(`#items_bar_total_prize_${glob_N}`).text());
+                total2=(total2+(parseFloat($(`#prod_prize_${glob_N}`).text()))).toFixed(2);
+                $(`#items_bar_total_prize_${glob_N}`).text(total2);
+
+
+
+
+            }
+            else{
+                var a=parseFloat($(`#product_details_number_${n}`).text());
+                a=a+1;
+                document.querySelector(`#product_details_number_${n}`).innerText=a;
+                document.querySelector(`#product_details_number_N`).innerText=a;
+                
+                // alert(parseFloat($(`#prod_prize_${n}`).text()));
+                // alert(total+parseFloat($(`#prod_prize_${n}`).text()));
+                total=(total+(parseFloat($(`#prod_prize_${n}`).text()))).toFixed(2);;
+
+
+
+                document.querySelector(`#items_bar_number_${n}`).innerText=a;               
+                $(`#items_bar_number2_${n}`).text(parseInt($(`#items_bar_number2_${n}`).text())+1);
+
+
+                var total2=parseFloat($(`#items_bar_total_prize_${n}`).text());
+                total2=(total2+(parseFloat($(`#prod_prize_${n}`).text()))).toFixed(2);
+                $(`#items_bar_total_prize_${n}`).text(total2);
+
+            }
+            $("#selected_items_prize").text(total);
+            
+            // n=glob_N;
+            // var a=parseFloat($(".product_details_number:first").text());
+
+
+            
+        }
+
+
+        function product_details_number_minus(n){
+            var total=parseFloat($("#selected_items_prize").text());
+
+            if((typeof n)=="undefined"){
+                // alert(glob_N);
+                var a=parseFloat($(`#product_details_number_${glob_N}`).text());
+                if(a>1){
+                    a=a-1;
+                    document.querySelector(`#product_details_number_${glob_N}`).innerText=a;
+                    document.querySelector(`#product_details_number_N`).innerText=a;
+
+                    document.querySelector(`#items_bar_number_${glob_N}`).innerText=a;               
+                    $(`#items_bar_number2_${glob_N}`).text(parseInt($(`#items_bar_number2_${glob_N}`).text())-1);
+
+                    var total2=parseFloat($(`#items_bar_total_prize_${glob_N}`).text());
+                    total2=(total2-(parseFloat($(`#prod_prize_${glob_N}`).text()))).toFixed(2);
+                    $(`#items_bar_total_prize_${glob_N}`).text(total2);
+                }
+                else if((a-1)==0){
+                    $(`#product_details_number_all_${glob_N}`).css("display","none");
+                    $(`#product_details_number_${glob_N}`).text(0);
+                    $(`#cba_${glob_N}`).css("display","block");
+                    $(`#product_details_number_all_N`).css("display","none");
+                    $(`#product_details_number_N`).text(0);
+                    $(`#cba_N`).css("display","block");
+
+                    var j=parseInt($("#selected_items_number").text());
+                    $("#selected_items_number").text(j-1);
+                    $("#selected_items_number2").text(j-1);
+
+                    $(`#items_bar_card_${glob_N}`).remove();
+                
+                }
+                total=(total-(parseFloat($(`#prod_prize_${glob_N}`).text()))).toFixed(2); 
+            }
+            else{
+                var a=parseFloat($(`#product_details_number_${n}`).text());
+                if(a>1){
+                    a=a-1;
+                    document.querySelector(`#product_details_number_${n}`).innerText=a;
+                    document.querySelector(`#product_details_number_N`).innerText=a;
+
+                    document.querySelector(`#items_bar_number_${n}`).innerText=a;               
+                    $(`#items_bar_number2_${n}`).text(parseInt($(`#items_bar_number2_${n}`).text())-1);
+
+
+                    var total2=parseFloat($(`#items_bar_total_prize_${n}`).text());
+                    total2=(total2-(parseFloat($(`#prod_prize_${n}`).text()))).toFixed(2);
+                    $(`#items_bar_total_prize_${n}`).text(total2);
+                }
+                else if((a-1)==0){
+                    $(`#product_details_number_all_${n}`).css("display","none");
+                    $(`#product_details_number_${n}`).text(0);
+                    $(`#cba_${n}`).css("display","block");
+                    $(`#product_details_number_all_N`).css("display","none");
+                    $(`#product_details_number_N`).text(0);
+                    $(`#cba_N`).css("display","block");
+
+                    var j=parseInt($("#selected_items_number").text());
+                    $("#selected_items_number").text(j-1);
+                    $("#selected_items_number2").text(j-1);
+
+
+                    $(`#items_bar_card_${n}`).remove();
+                    
+                }  
+                total=(total-(parseFloat($(`#prod_prize_${n}`).text()))).toFixed(2);
+            }
+            $("#selected_items_prize").text(total);
+
+            if((j-1)<1){
+                $(".items_bar_noitem").css("display","flex");
+            }
+                
+        }
+
+
+        function items_bar_plus(g){
+            var total=parseFloat($("#selected_items_prize").text());
+            var a=parseFloat($(`#items_bar_number_${g}`).text());
+            a=a+1;
+            
+            document.querySelector(`#product_details_number_${g}`).innerText=a;
+            document.querySelector(`#items_bar_number_${g}`).innerText=a;
+                
+            total=(total+(parseFloat($(`#prod_prize_${g}`).text()))).toFixed(2);
+            $("#selected_items_prize").text(total);
+
+            
+            $(`#items_bar_number2_${g}`).text(parseInt($(`#items_bar_number2_${g}`).text())+1);
+
+
+
+            var total2=parseFloat($(`#items_bar_total_prize_${g}`).text());
+            total2=(total2+(parseFloat($(`#prod_prize_${g}`).text()))).toFixed(2);
+            $(`#items_bar_total_prize_${g}`).text(total2);
+            
+        }
+
+
+
+        function items_bar_minus(g){
+            var total=parseFloat($("#selected_items_prize").text());
+            var a=parseFloat($(`#items_bar_number_${g}`).text());
+                if(a>1){
+                    a=a-1;
+                    document.querySelector(`#product_details_number_${g}`).innerText=a;
+                    document.querySelector(`#items_bar_number_${g}`).innerText=a;
+                    $(`#items_bar_number2_${g}`).text(parseInt($(`#items_bar_number2_${g}`).text())-1);
+
+                    var total2=parseFloat($(`#items_bar_total_prize_${g}`).text());
+                    total2=(total2-(parseFloat($(`#prod_prize_${g}`).text()))).toFixed(2);
+                    $(`#items_bar_total_prize_${g}`).text(total2);
+                }
+                else if((a-1)==0){
+                    $(`#product_details_number_all_${g}`).css("display","none");
+                    $(`#product_details_number_${g}`).text(0);
+                    $(`#cba_${g}`).css("display","block");
+                    $(`#product_details_number_all_N`).css("display","none");
+                    $(`#product_details_number_N`).text(0);
+                    $(`#cba_N`).css("display","block");
+
+                    var j=parseInt($("#selected_items_number").text());
+                    $("#selected_items_number").text(j-1);
+                    $("#selected_items_number2").text(j-1);
+
+                    $(`#items_bar_card_${g}`).remove();
+
+                
+                }
+                total=(total-(parseFloat($(`#prod_prize_${g}`).text()))).toFixed(2);
+                $("#selected_items_prize").text(total); 
+
+
+                if((j-1)<1){
+                    $(".items_bar_noitem").css("display","flex");
+                }
+                
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function card_click(n){
+            glob_N=n;
+            
+            $(".product_details_text").text($(`#prod_description_${n}`).text())
+            $(".product_details_name").text($(`#prod_name_${n}`).text());
+            $(".product_details_ccal").text($(`#prod_ccal_${n}`).text());
+            $(".product_details_prize").text("$"+$(`#prod_prize_${n}`).text());
+            $("#product_details_image_N").attr('src', $(`#prod_image_${n}`).attr('src'));
+            
+            if($(`#product_details_number_${n}`).text()>0){
+                // alert($(`#product_details_number_${n}`).text());
+                $(`#product_details_number_N`).text($(`#product_details_number_${n}`).text());
+                $(`#cba_N`).css("display","none");
+                $(`#product_details_number_all_N`).css("display","block");     
+            }
+            else{
+                $(`#product_details_number_N`).text(0);
+                $(`#cba_N`).css("display","block");
+                $(`#product_details_number_all_N`).css("display","none");
+            }
+            
+
+            $(".product_details").css("display","flex");
+            $("body").css("overflow", "hidden");
+
+        }
+
+
+        function prod_add_button(n){
+            var total=parseFloat($("#selected_items_prize").text());
+            // alert(total);
+            if((typeof n)=="undefined"){
+
+                $(`#product_details_number_all_${glob_N}`).css("display","block");
+                $(`#product_details_number_${glob_N}`).text(1);
+                $(`#cba_${glob_N}`).css("display","none");
+                $(`#product_details_number_all_N`).css("display","block");
+                $(`#product_details_number_N`).text(1);
+                $(`#cba_N`).css("display","none");
+                total+=parseFloat($(`#prod_prize_${glob_N}`).text());
+
+                // alert("asdasd");
+                $(".items_bar_all_cards").append(`<div class="items_bar_card" style="display: flex; border-bottom: 1px solid rgb(226, 226, 226); padding: 20px 30px; justify-content: space-between;" id="items_bar_card_${glob_N}"><div style="display: flex;"><div class="items_bar_card_all"><svg  class="items_bar_plus" onclick="items_bar_plus(${glob_N})" xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 12 12"><g id="Group_3351" data-name="Group 3351" transform="translate(-1367 -190)"><rect data-name="Rectangle 520" width="12" height="2" rx="1" transform="translate(1367 195)" fill="currentColor"></rect><rect data-name="Rectangle 521" width="12" height="2" rx="1" transform="translate(1374 190) rotate(90)" fill="currentColor"></rect></g></svg><span style="color: rgb(13, 17, 54);margin-top: -1px;" id="items_bar_number_${glob_N}">1</span><div class="items_bar_minus" onclick="items_bar_minus(${glob_N})"><svg style="color: rgb(119, 121, 140); " xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg></div></div><img style="width: 85px; height: 85px; margin-left: 10px;" id="items_bar_card_image_${glob_N}" src="http://s3.amazonaws.com/redqteam.com/pickbazar/banana_thumb.png" alt=""><div style="margin-left: 10px; display: flex; flex-direction: column; justify-content: center ;"><h1 id="items_bar_prod_name_${glob_N}" style="font-size: 14px; font-weight: 400; color: rgb(13, 17, 54); margin-bottom: 10px;">Banana</h1><div style="display: flex; font-size: 7px;font-weight: 700; color: rgb(0, 158, 127); margin-bottom: 10px;"><h1>$</h1><h1  id="items_bar_prize_${glob_N}">0</h1></div><div style="display: flex; font-size: 13px; font-weight: 400;color: rgb(119, 121, 140);"><p id="items_bar_number2_${glob_N}">1</p><p>&nbsp;x&nbsp;</p><p id="items_bar_ccal_${glob_N}">8pc(s)</p></div></div></div><div style="display: flex; align-items: center; "><h1 style=" font-size: 15px; font-weight: 700; color: rgb(13, 17, 54);">$</h1><h1 style="font-size: 15px; font-weight: 700; color: rgb(13, 17, 54);" id="items_bar_total_prize_${glob_N}">${$(`#prod_prize_${glob_N}`).text()}</h1><svg class="items_bar_remove" onclick="items_bar_remove(${glob_N})" xmlns="http://www.w3.org/2000/svg" width="10.003" height="10" viewBox="0 0 10.003 10"><path data-name="_ionicons_svg_ios-close (5)" d="M166.686,165.55l3.573-3.573a.837.837,0,0,0-1.184-1.184l-3.573,3.573-3.573-3.573a.837.837,0,1,0-1.184,1.184l3.573,3.573-3.573,3.573a.837.837,0,0,0,1.184,1.184l3.573-3.573,3.573,3.573a.837.837,0,0,0,1.184-1.184Z" transform="translate(-160.5 -160.55)" fill="currentColor"></path></svg></div></div>`);              
+
+                $(`#items_bar_prod_name_${glob_N}`).text($(`#prod_name_${glob_N}`).text());
+                $(`#items_bar_ccal_${glob_N}`).text($(`#prod_ccal_${glob_N}`).text());
+                $(`#items_bar_card_image_${glob_N}`).attr('src', $(`#prod_image_${glob_N}`).attr('src'));
+                $(`#items_bar_prize_${glob_N}`).text($(`#prod_prize_${glob_N}`).text());
+                
+                
+                
+                
+            }
+            else{
+                $(`#product_details_number_all_${n}`).css("display","block");
+                $(`#product_details_number_${n}`).text(1);
+                $(`#cba_${n}`).css("display","none");
+                total+=parseFloat($(`#prod_prize_${n}`).text());
+
+                $(".items_bar_all_cards").append(`<div class="items_bar_card" style="display: flex; border-bottom: 1px solid rgb(226, 226, 226); padding: 20px 30px; justify-content: space-between;" id="items_bar_card_${n}"><div style="display: flex;"><div class="items_bar_card_all"><svg class="items_bar_plus" onclick="items_bar_plus(${n})" xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 12 12"><g id="Group_3351" data-name="Group 3351" transform="translate(-1367 -190)"><rect data-name="Rectangle 520" width="12" height="2" rx="1" transform="translate(1367 195)" fill="currentColor"></rect><rect data-name="Rectangle 521" width="12" height="2" rx="1" transform="translate(1374 190) rotate(90)" fill="currentColor"></rect></g></svg><span style="color: rgb(13, 17, 54);margin-top: -1px;" id="items_bar_number_${n}">1</span><div class="items_bar_minus" onclick="items_bar_minus(${n})"><svg xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg></div></div><img style="width: 85px; height: 85px; margin-left: 10px;" id="items_bar_card_image_${n}" src="http://s3.amazonaws.com/redqteam.com/pickbazar/banana_thumb.png" alt=""><div style="margin-left: 10px; display: flex; flex-direction: column; justify-content: center ;"><h1 id="items_bar_prod_name_${n}" style="font-size: 14px; font-weight: 400; color: rgb(13, 17, 54); margin-bottom: 10px;">Banana</h1><div style="display: flex; font-size: 7px;font-weight: 700; color: rgb(0, 158, 127); margin-bottom: 10px;"><h1>$</h1><h1  id="items_bar_prize_${n}">0</h1></div><div style="display: flex; font-size: 13px; font-weight: 400;color: rgb(119, 121, 140);"><p id="items_bar_number2_${n}">1</p><p>&nbsp;x&nbsp;</p><p id="items_bar_ccal_${n}">8pc(s)</p></div></div></div><div style="display: flex; align-items: center; "><h1 style=" font-size: 15px; font-weight: 700; color: rgb(13, 17, 54);">$</h1><h1 style="font-size: 15px; font-weight: 700; color: rgb(13, 17, 54);" id="items_bar_total_prize_${n}">${$(`#prod_prize_${n}`).text()}</h1><svg class="items_bar_remove" onclick="items_bar_remove(${n})" xmlns="http://www.w3.org/2000/svg" width="10.003" height="10" viewBox="0 0 10.003 10"><path data-name="_ionicons_svg_ios-close (5)" d="M166.686,165.55l3.573-3.573a.837.837,0,0,0-1.184-1.184l-3.573,3.573-3.573-3.573a.837.837,0,1,0-1.184,1.184l3.573,3.573-3.573,3.573a.837.837,0,0,0,1.184,1.184l3.573-3.573,3.573,3.573a.837.837,0,0,0,1.184-1.184Z" transform="translate(-160.5 -160.55)" fill="currentColor"></path></svg></div></div>`);
+                
+                $(`#items_bar_prod_name_${n}`).text($(`#prod_name_${n}`).text());
+                $(`#items_bar_ccal_${n}`).text($(`#prod_ccal_${n}`).text());
+                $(`#items_bar_card_image_${n}`).attr('src', $(`#prod_image_${n}`).attr('src'));
+                $(`#items_bar_prize_${n}`).text($(`#prod_prize_${n}`).text());
+            
+            
+            }
+            $("#selected_items_prize").text(total);
+
+            var j=parseInt($("#selected_items_number").text());
+            $("#selected_items_number").text(j+1);
+            $("#selected_items_number2").text(j+1);
+
+
+           
+
+            $(".items_bar_noitem").css("display","none");
+
+
+
+
+            event.stopPropagation();
+
+
+
+            
+        }
+        function join_card(){
+            event.stopPropagation();
+        }
+
+
+
+
+        function items_bar_remove(g){
+            
+            var total=parseFloat($("#selected_items_prize").text());
+            total=(total-(parseFloat($(`#items_bar_total_prize_${g}`).text()))).toFixed(2);
+            $("#selected_items_prize").text(total); 
+            
+            $(`#product_details_number_all_${g}`).css("display","none");
+            $(`#product_details_number_${g}`).text(0);
+            $(`#cba_${g}`).css("display","block");
+            $(`#product_details_number_all_N`).css("display","none");
+            $(`#product_details_number_N`).text(0);
+            $(`#cba_N`).css("display","block");
+
+            var j=parseInt($("#selected_items_number").text());
+            $("#selected_items_number").text(j-1);
+            $("#selected_items_number2").text(j-1);
+            $(`#items_bar_card_${g}`).remove();
+        }
+
+        function product_details_number_all(n){
+            event.stopPropagation();
+        }
+
+
+
+
+
+
+
+
+
+        // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaFORMM
+
+
+        $("#join_form_login").on("submit",function(event){
+            alert("ASd");
+            event.preventDefault();
+            join_username=$(".join_username").val()
+            join_password=$(".join_password").val();
+            
+
+        
+            $.ajax({
+                url:"http://35.225.243.133/accounts/api/login/",
+                method:"POST",
+                data:{
+                    "username":join_username,
+                    "password":join_password
+                },
+                success: function(e){
+                    console.log(e);
+                    alert("SUCCESS");
+                    
+                },
+                error:function(e){
+                    console.log(e);
+                    alert(e);
+                }
+            })
+            
+            
+        });
+
+        $("#join_form_signup").on("submit",function(event){
+            event.preventDefault();
+            join_username2=$(".join_username2").val();
+            join_email2=$(".join_email2").val();
+            join_password2=$(".join_password2").val();
+            join_firstname2=$(".join_firstname2").val();
+            join_surname2=$(".join_surname2").val();
+
+
+        
+            $.ajax({
+                url:"http://35.225.243.133/accounts/api/register/",
+                method:"POST",
+                data:{
+                    "username":join_username2,
+                    "email":join_email2,
+                    "password":join_password2,
+                    "first_name":join_firstname2,
+                    "last_name":join_surname2
+
+                },
+                success: function(e){
+                    console.log(e);
+                    alert("SUCCESS");
+                    
+                },
+                error:function(e){
+                    console.log(e);
+                    alert("Error");
+                }
+            })
+            
+            
+        });
+
+
+        function join_signup(){
+            $(".join_card").css("display","none");
+            $(".join_card_signup").css("display","flex");
+
+            join_username=$(".join_username").val("");
+            join_password=$(".join_password").val("");
+            join_username2=$(".join_username2").val("");
+            join_email2=$(".join_email2").val("");
+            join_password2=$(".join_password2").val("");
+            join_firstname2=$(".join_firstname2").val("");
+            join_surname2=$(".join_surname2").val("");
+        }
+        function join_login(){
+            $(".join_card").css("display","flex");
+            $(".join_card_signup").css("display","none");
+
+            join_username=$(".join_username").val("");
+            join_password=$(".join_password").val("");
+            join_username2=$(".join_username2").val("");
+            join_email2=$(".join_email2").val("");
+            join_password2=$(".join_password2").val("");
+            join_firstname2=$(".join_firstname2").val("");
+            join_surname2=$(".join_surname2").val("");
+        }
+
+
+
+
+
+        
+
+    </script>
+
+</body>
+</html>
