@@ -170,7 +170,7 @@ body{
 
 .items_bar_center{
     background-color: white;
-    width: a
+    width: 700px;
     height: 490px;
     overflow: auto;
     margin-top: 45px;
@@ -711,4 +711,29 @@ button svg{
 
 
 
+/* 150 */
 
+@media screen and (max-width:1000px){ 
+    .items_bar_center{
+       
+        height: 0px;
+        
+    }
+    
+}
+@media screen and (max-width:1400px){
+    .items_bar_center{
+       
+        height: 400px;
+        
+    }
+    
+}
+@media screen and (max-width:1200px){
+    .items_bar_center{
+       
+        height: 300px;
+        
+    }
+    
+}

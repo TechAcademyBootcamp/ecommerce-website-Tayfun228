@@ -343,11 +343,11 @@
             if(localStorage.getItem("user_data") && JSON.parse(localStorage.getItem("user_data"))["token"]){
                 var user_data=JSON.parse(localStorage.getItem("user_data"));
                 var token = user_data['token'];
+                alert(token);
                 if(token==token_main){
                     if($(".items_bar_update").text()=="Update Product"){
                         
-                        var user_data=JSON.parse(localStorage.getItem("user_data"));
-                        var token = user_data['token'];
+
                         var formData =new FormData();
                         
                         formData.append('title',  $("[name='title']").val());
@@ -382,10 +382,10 @@
                             error:function(e){
                                 alert("ERROR");
                                 console.log(e);
-                                // var errors=JSON.parse(e["responseText"]);
-                                // for(var i in errors){
-                                //     $(`[error=${i}]`).text(errors[i]);
-                                // }  
+                                var errors=JSON.parse(e["responseText"]);
+                                for(var i in errors){
+                                    $(`[error=${i}]`).text(errors[i]);
+                                }  
                             }
                         })
                     }
@@ -425,10 +425,10 @@
                             error:function(e){
                                 alert("ERROR");
                                 console.log(e);
-                                // var errors=JSON.parse(e["responseText"]);
-                                // for(var i in errors){
-                                //     $(`[error=${i}]`).text(errors[i]);
-                                // }  
+                                var errors=JSON.parse(e["responseText"]);
+                                for(var i in errors){
+                                    $(`[error=${i}]`).text(errors[i]);
+                                }  
                             }
 
                         });
@@ -502,7 +502,7 @@
                 },
                 success:function(e){
                     // console.log(e);  
-                    // alert("SUCCESSSS");
+                    alert("SUCCESSSS");
                     for(i in e){
                         console.log(e[i]);
                         var id=e[i]["id"];
